@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config
+  profiles:
+    active: awss3
+  cloud:
+    config:
+      server:
+        #        git:
+        #          uri: file://${user.home}/git-repo-config
+        #          force-pull: true
+        #          searchPaths: config
+        awss3:
+          region: us-west-2
+          bucket: bucket-for-config
